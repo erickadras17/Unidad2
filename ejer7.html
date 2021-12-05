@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Proyecto 06. Condicionales anidadas</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <script type="text/javascript">
+      let cal1, cal2, cal3, cal4, cal5, promedio;
+
+      cal1 = parseInt(prompt('Ingrese la calificacion 1: ',''));
+      cal2 = parseInt(prompt('Ingrese la calificacion 2: ',''));
+      cal3 = parseInt(prompt('Ingrese la calificacion 3: ',''));
+      cal4 = parseInt(prompt('Ingrese la calificacion 4: ',''));
+      cal5 = parseInt(prompt('Ingrese la calificacion 5: ',''));
+      promedio = (cal1 + cal2 + cal3 + cal4 + cal5)/5;
+
+      document.write('<div class="enunciado">');
+      document.write("Promedio del alumno");
+      document.write('</div>')
+      document.write('<div class="resultado">')
+
+      if (promedio ==100) {
+        document.write('Usted APROBO la asignatura');
+        document.write('<br>');
+        document.write('Con un promedio de '+promedio);
+        document.write('<br>');
+        document.write('Su desempeño es EXELENTE');
+      }
+      else if (promedio >=90) {
+        document.write('Usted APROBO la asignatura');
+        document.write('<br>');
+        document.write('Con un promedio de '+promedio);
+        document.write('<br>');
+        document.write('Su desempeño es NOTABLE');
+      }
+      else if (promedio >=80) {
+        document.write('Usted APROBO la asignatura');
+        document.write('<br>');
+        document.write('Con un promedio de '+promedio);
+        document.write('<br>');
+        document.write('Su desempeño es BUENO');
+      }
+      else if (promedio >=70) {
+        document.write('Usted APROBO la asignatura');
+        document.write('<br>');
+        document.write('Con un promedio de '+promedio);
+        document.write('<br>');
+        document.write('Su desempeño es SUFICIENTE');
+      }
+      else {
+        document.write("Usted REPROBO la asignatura");
+        document.write("<br>");
+        document.write("Con un promedio de "+promedio);
+        document.write("<br>");
+        document.write("Su desempeño no es aprobatorio");
+      }
+    document.write('</div>')
+    </script>
+  </body>
+</html>

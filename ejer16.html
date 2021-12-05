@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Proyecto 15. Control Radio</title>
+  </head>
+  <body>
+    <form>
+      <input type="Radio" id="radio1" name="estudios"> Sin estudios
+      <br>
+      <input type="Radio" id="radio2" name="estudios"> Primaria
+      <br>
+      <input type="Radio" id="radio3" name="estudios"> Secundaria
+      <br>
+      <input type="Radio" id="radio4" name="estudios"> Bachillerato
+      <br>
+      <input type="Radio" id="radio5" name="estudios"> Universidad
+      <br>
+      <input type="Radio" id="radio6" name="estudios"> Maestria
+      <br>
+      <input type="Radio" id="radio7" name="estudios"> Doctorado
+      <br>
+      <input type="button" name="" value="Mostrar" onclick="mostarSeleccionados()">
+      <br>
+    </form>
+    <script type="text/javascript">
+      function mostarSeleccionados(){
+        if(document.getElementById('radio1').checked){
+          alert('No tiene estudios');
+        }
+        if(document.getElementById('radio2').checked){
+          alert('Tiene estudios de Primaria');
+        }
+        if(document.getElementById('radio3').checked){
+          alert('Tiene estudios de Secundaria');
+        }
+        if(document.getElementById('radio4').checked){
+          alert('Tiene estudios de Bachillerato');
+        }
+        if(document.getElementById('radio5').checked){
+          alert('Tiene estudios de Universidad');
+        }
+        if(document.getElementById('radio6').checked){
+          alert('Tiene estudios de Maestria');
+        }
+        if(document.getElementById('radio7').checked){
+          alert('Tiene estudios de Doctorado');
+        }
+        if(document.getElementById('radio7').checked){
+          alert('Tiene estudios de');
+        }
+        if(document.getElementById('radio1').checked){
+          alert('Tiene estudios de');
+        }
+      }
+    </script>
+  </body>
+</html>

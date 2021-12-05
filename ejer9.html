@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Proyecto 08. Switch</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      let sueldo;
+      let categoria;
+      let bonificacion;
+      let sueldototal;
+
+    sueldo=prompt('Introduzca el sueldo del trabajador: ', '');
+    categoria=prompt('Ingrese la categoria del trabajador: \nA \nB \nC \nD ', '');
+
+        switch (categoria) {
+        case "A":
+        bonificacion=sueldo*0.05;
+        sueldototal=parseInt(sueldo)+parseInt(bonificacion);
+          document.write('La bonificacion sera de: $'+ bonificacion);
+          document.write('<br>');
+          document.write('Su sueldo total sera de: $'+ sueldototal);
+          break;
+        case "B":
+        bonificacion=sueldo*0.07;
+          document.write('La bonificacion sera de: $'+ bonificacion);
+          document.write('<br>');
+          document.write('Su sueldo total sera de: $'+ sueldototal);
+          break;
+        case "C":
+        bonificacion=sueldo*0.09;
+          document.write('La bonificacion sera de: $'+ bonificacion);
+          document.write('<br>');
+          document.write('Su sueldo total sera de: $'+ sueldototal);
+          break;
+        case "D":
+        bonificacion=sueldo*0.11;
+          document.write('La bonificacion sera de: $'+ bonificacion);
+          document.write('<br>');
+          document.write('Su sueldo total sera de: $'+ sueldototal);
+        default:
+            document.write('Debe teclear un numero entre A y D ');
+        }
+    </script>
+  </body>
+</html>

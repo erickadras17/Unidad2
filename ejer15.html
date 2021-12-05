@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Proyecto 13. Checkbox</title>
+  </head>
+  <body>
+    <form>
+      <input type="checkbox" id="Checkbox1" > Futbol
+      <br>
+      <input type="checkbox" id="Checkbox2" > Voleibol
+      <br>
+      <input type="checkbox" id="Checkbox3" > Basquetbol
+      <br>
+      <input type="checkbox" id="Checkbox4" > Tenis
+      <br>
+      <input type="checkbox" id="Checkbox4" > Natacion
+      <br>
+      <input type="button" name="" value="Mostrar" onClick="contarSeleccionado()">
+    </form>
+    <script type="text/javascript">
+      function verificarDeportes(){
+        var cant=0;
+        if (document.getElementById('Checkbox1').checked)
+        {
+          deportes=deportes+' Futbol ';
+        }
+        if (document.getElementById('Checkbox2').checked)
+        {
+          deportes=deportes+' Voleibol ';
+        }
+        if (document.getElementById('Checkbox3').checked)
+        {
+          deportes=deportes+' Basquetbol ';
+        }
+        if (document.getElementById('Checkbox4').checked)
+        {
+          deportes=deportes+' Tenis ';
+        }
+        if (document.getElementById('Checkbox5').checked)
+        {
+          deportes=deportes+' Natacion ';
+        }
+        alert('Los deportes que practica son: ' + deportes);
+       }
+
+    </script>
+
+  </body>
+</html>

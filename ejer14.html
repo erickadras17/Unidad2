@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Proyecto 13. Checkbox</title>
+  </head>
+  <body>
+    <form>
+      <input type="checkbox" id="Checkbox1" >javascript
+      <br>
+      <input type="checkbox" id="Checkbox2" >PHP
+      <br>
+      <input type="checkbox" id="Checkbox3" >Python
+      <br>
+      <input type="checkbox" id="Checkbox4" >VB.Net
+      <br>
+      <input type="button" name="" value="Mostrar" onclick="contarSeleccionado()">
+    </form>
+    <script type="text/javascript">
+      function contarSeleccionado(){
+        var cant=0;
+        if (document.getElementById('Checkbox1').checked){
+          cant++;
+        }
+        if (document.getElementById('Checkbox2').checked){
+          cant++;
+        }
+        if (document.getElementById('Checkbox3').checked){
+          cant++;
+        }
+        if (document.getElementById('Checkbox4').checked){
+          cant++;
+        }
+        alert(' Conoce ' + cant + ' lenguajes ');
+      }
+
+    </script>
+
+  </body>
+</html>

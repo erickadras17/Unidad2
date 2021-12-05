@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Proyecto 05. Condicionales Compuestas</title>
+    <link rel="stylesheet" href="css/estilo.css">
+
+  </head>
+  <body>
+    <script type="text/javascript">
+      let cal1, cal2, cal3, cal4, cal5, promedio;
+
+      cal1=parseInt(prompt('Ingrese La calificación 1: ', ''));
+      cal2=parseInt(prompt('Ingrese La calificación 2: ', ''));
+      cal3=parseInt(prompt('Ingrese La calificación 3: ', ''));
+      cal4=parseInt(prompt('Ingrese La calificación 4: ', ''));
+      cal5=parseInt(prompt('Ingrese La calificación 5: ', ''));
+
+      promedio=(cal1+cal2+cal3+cal4+cal5)/5;
+      document.write('<div class="enunciado">');
+      document.write('Promedio del Alumno');
+      document.write('</div>');
+      document.write('<div class="resultado">');
+        if (promedio>=70) {
+          document.write('Aprobó la materia');
+          document.write('<br>');
+          document.write('Con un promedio de: '+promedio);
+        } else {
+          document.write('Reprobó la materia');
+          document.write('<br>');
+          document.write('Con promedio de: '+promedio);
+        }
+        document.write('</div>');
+    </script>
+  </body>
+</html>

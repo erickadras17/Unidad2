@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Protecto 09. Estructura de control for</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="enunciado">
+      Estrutura de control FOR
+     <p> Se realiza la carga de 10 valores de enteros por teclado. Se desea conocer:</p>
+     <ul>
+     <li>La cantidad de los valores negativos ingresados.</li>
+     <li>La cantidad de valores positivos ingresados.</li>
+     <li>La cantidad de multiplos de 15.</li>
+     <li>El valor acumulativo de los numeros ingresados que son pares.</li>
+     </ul>
+     </div>
+     <script type="text/javascript">
+      let cantnegativos=0;
+      let cantpositivos=0;
+      let mult15=0;
+      let sumapares=0;
+      let valor;
+      let m;
+
+      for (m=1; m<=10; m++) {
+        valor=parseInt(prompt('Ingrese el valor: ',''));
+        if (valor<0) {
+          cantnegativos++;
+        }
+        else {
+          if (valor>0) {
+            cantpositivos++;
+          }
+        }
+        if (valor%15==0 && valor!=0) {
+          mult15++;
+        }
+        if (valor%2==0) {
+          sumapares=sumapares+valor;
+        }
+      }
+      document.write('<div class="resultado">');
+      document.write('Cantidad de valores negativos: '+cantnegativos+'<br>');
+      document.write('Cantidad de valores positivos: '+cantpositivos+'<br>');
+      document.write('Cantidad de valores multiplos de 15: '+mult15+'<br>');
+      document.write('Suma de los valores pares ingresados: '+sumapares+'<br>')
+      document.write('</div>');
+    </script>
+</body>
+</html>
+</script>
+</div>
+</body>
+</html>

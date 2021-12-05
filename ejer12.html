@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Proyecto 11.Formulario para calculo del promedio</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+  </head>
+  <body>
+    <div class="enunciado">Calculo del promedio</div>
+      <form class="resultado">
+      <p>Calificacion 1:
+      <input type="text" id="cal1"></p>
+      <p>Calificacion 2:
+      <input type="text" id="cal2"></p>
+      <p>Calificacion 3:
+      <input type="text" id="cal3"></p>
+      <p>Calificacion 4:
+      <input type="text" id="cal4"></p>
+      <input type="button"  value="Promedio" onclick="alert(promedio(90,100,80,70));">
+    </form>
+    <script type="text/javascript">
+      var promedio = function (cal1, cal2, cal3, cal4){
+        var cal1=parseFloat(document.getElementById('cal1').value);
+        var cal2=parseFloat(document.getElementById('cal2').value);
+        var cal3=parseFloat(document.getElementById('cal3').value);
+        var cal4=parseFloat(document.getElementById('cal4').value);
+        resultado = (cal1*0.20)+(cal2*0.25)+(cal3*0.25)+(cal4*0.40);
+        return resultado;
+      }
+    </script>
+  </body>
+</html>
